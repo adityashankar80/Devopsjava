@@ -205,6 +205,8 @@
             <version>1.9.3</version>
             <scope>provided</scope>
         </dependency>
+             
+             
 
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
@@ -267,6 +269,13 @@
                             <warName>ROOT</warName>
                         </configuration>
                     </plugin>
+                         <plugin>            
+                               <groupId>org.apache.maven.plugins</groupId>
+                                  <artifactId>maven-war-plugin</artifactId>
+                                   <configuration>
+                                 <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
+                                </configuration>
+</plugin>
                 </plugins>
             </build>
         </profile>
